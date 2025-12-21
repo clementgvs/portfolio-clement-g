@@ -40,21 +40,18 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  //padding: 1rem;
   box-sizing: inherit;
   position: relative;
 }
 
-.content {
-  display: flex;
-  justify-content: space-around;
+.content-wrapper {
   width: 100%;
-  max-width: 700px;
-  margin-bottom: 3rem;
+  min-height: 100%;
 }
 
 @media screen and (max-width: 650px) {
-  .content {
+  .content-wrapper{
     flex-direction: column;
     width: max-content;
   }
