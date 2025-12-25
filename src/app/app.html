@@ -1,11 +1,25 @@
 <main class="main">
+  <div class="floating-bar">
+    <img [src]="nightThemePath" alt="Theme image" class="theme-image" (click)="changeColorTheme()">  
+    <a class="lang-checkbox" (click)="switchLang()">
+      {{nextLang}}
+    </a>
+    <a class="professional-btn">Professional</a>
+    <a class="academic-btn">Academic</a>
+    <a class="skills-btn">Skills</a>
+    <a class="projects-btn">Projects</a>
+    <a class="contact-btn">Contact</a>
+  </div>
   <div class="content-wrapper">
-    <app-landing></app-landing>
+    <app-landing></app-landing> 
     <app-skills></app-skills>
     <app-projects></app-projects>
     <app-academic></app-academic>
     <app-professional></app-professional>
     <app-contact></app-contact>
   </div>
-</main>
+  <div class="go-to-top" (click)="scrollToTop()" [class.visible]="showGoToTopBtn">
+    <img [src]="topArrowPath" alt="Go to top" class="arrow">
+  </div>
+</main>  
 <router-outlet />
