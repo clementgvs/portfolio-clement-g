@@ -9,18 +9,40 @@
 
 .title-span{
     margin-top: 5vh;
-    margin-bottom: 5vh;
 }
 
 .title {
     margin-top: 55vh;
     margin-left: 1rem;
+    margin-bottom: 3rem;
     font-size: 10vw;  
     font-weight: 700;
     color: rgba(55, 98, 192, 0.5);
 }
 
+@keyframes shake-vertical-normal {
+    0%, 100% { 
+        transform: translateY(0); 
+    } 
+    10%, 30%, 50%, 70%, 90% { 
+        transform: translateY(-8px); 
+    } 
+    20%, 40%, 60%, 80% { 
+        transform: translateY(8px); 
+    } 
+}
+
+.visitBottomArrow{
+    width: 4.5vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 75%;
+    animation: shake-vertical-normal 10s ease 0s infinite normal none; 
+}
+
 .subtitle {
+    margin-top: 5rem;
     margin-left: 2rem;
     font-size: 4em;
     font-weight: 600;

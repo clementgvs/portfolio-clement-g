@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './landing.scss',
 })
 export class Landing {
-
+  visitBottomArrowPath = "bottom-arrow-white.png"
 }

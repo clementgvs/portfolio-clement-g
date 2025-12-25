@@ -76,9 +76,19 @@ main {
   border-radius: 999px;
   padding: 1em;
   transition: background-color 0.3s ease;
+  text-decoration: none;
+
 }
 .floating-bar > a:hover {
   background-color: rgb(0, 39, 197, 0.25);
+}
+.floating-bar > a:hover,
+.floating-bar > a:active,
+.floating-bar > a:visited,
+.floating-bar > a:focus {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .theme-image {
@@ -90,6 +100,7 @@ main {
 }
 .theme-image:hover {
   background-color: rgb(0, 39, 197, 0.25);
+  cursor: pointer;
 }
 
 .go-to-top{
