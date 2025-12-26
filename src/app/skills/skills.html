@@ -1,3 +1,26 @@
 <div class="content">
-    
+    <section class="languages">
+
+    </section>
+    <section class="programming">
+        <div class="carousel-container">
+            <button class="nav-btn" (click)="prev()" [style.visibility]="currentIndex > 0 ? 'visible' : 'hidden'">
+                ‹
+            </button>
+            <div class="carousel">
+                <div class="carousel-track" [style.transform]="'translateX(-' + currentIndex * (100 / visibleCards) + '%)'">
+                @for (skill of skills; track skill.name) {
+                    <div class="card">
+                        <img class="icon" [src]="skill.icon">
+                        <h3>{{ skill.name }}</h3>
+                        <p>{{ skill.text }}</p>
+                    </div>
+                }
+                </div>
+            </div>
+            <button class="nav-btn" (click)="next()" [style.visibility]="currentIndex >= 3 ? 'hidden' : 'visible'">
+                ›
+            </button>
+        </div>
+    </section>
 </div>

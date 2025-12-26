@@ -1,0 +1,56 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: auto;
+    margin-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.card {
+    min-width: 33.333%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    background: #1e1e2f;
+    color: white;
+    border-radius: 16px;
+    text-align: center;
+    margin: 0 0.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+    margin-bottom: 0.5rem;
+    width: 80%;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #666;
+}
+
+.nav-btn:hover {
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card {
+        min-width: 100%;
+    }
+}
