@@ -1,1 +1,20 @@
-<div class="content"></div>
+<div class="content">
+    <div class="grid-container">
+        @for(project of this.projects; track project){
+            <div class="project-card">
+                <h3>{{ project.title }}</h3>
+                <p class="link">
+                    <a [href]="project.link" target="_blank">
+                        @if(project.link != null){
+                            Voir le projet
+                        }@else {
+                            Pas de lien
+                        }
+                    </a>
+                    <ng-template #privateLink>Privé</ng-template>
+                </p>
+                <p class="description">{{ project.description }}</p>
+            </div>
+        }
+    </div>
+</div>
