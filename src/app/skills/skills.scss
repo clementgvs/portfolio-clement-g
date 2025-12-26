@@ -1,3 +1,84 @@
+.lang-sliders {
+    display: flex;
+    gap: 5vw;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.languages{
+    width: 100%;
+}
+
+.slider {
+    width: 15vw;
+}
+
+.range-slider {
+  width: 100%;
+  margin: 50px auto;
+  font-family: sans-serif;
+}
+
+.label {
+  display: block;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.track {
+  position: relative;
+  height: 1vh;
+  background: white;
+  border-radius: 999px;
+}
+
+.fill {
+  width: 70%;
+  height: 100%;
+  background: #4f46e5;
+  border-radius: 999px;
+}
+
+.thumb {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 19px;
+  height: 19px;
+  background: #4f46e5;
+  border-radius: 999px;
+}
+
+.french > div > div > .fill {
+    width: 100%;
+}
+.french > div > div > .thumb {
+    left: 100%;
+}
+
+.english > div > div > .fill {
+    width: 75%;
+}
+.english > div > div > .thumb {
+    left: 75%;
+}
+
+.spanish > div > div > .fill {
+    width: 45%;
+}
+.spanish > div > div > .thumb {
+    left: 45%;
+}
+
+.japanese > div > div > .fill {
+    width: 30%;
+}
+.japanese > div > div > .thumb {
+    left: 30%;
+}
+
 .carousel-container {
     display: flex;
     align-items: center;
@@ -7,6 +88,7 @@
     margin-top: 5vh;
     padding-left: 5vw;
     padding-right: 5vw;
+    margin-bottom: 5vh;
 }
 
 .carousel {
@@ -26,14 +108,19 @@
     background: #1e1e2f;
     color: white;
     border-radius: 16px;
-    text-align: center;
     margin: 0 0.5rem;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
+.card > h3 {
+    text-align: center;
+}
+
 .icon {
-    margin-bottom: 0.5rem;
-    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    height: 10vh;
 }
 
 .nav-btn {
@@ -43,13 +130,11 @@
     cursor: pointer;
     color: #666;
 }
-
 .nav-btn:hover {
     color: white;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+@media screen and (max-width: 700px) {
     .card {
         min-width: 100%;
     }
