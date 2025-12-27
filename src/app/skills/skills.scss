@@ -36,7 +36,8 @@
 .fill {
   width: 70%;
   height: 100%;
-  background: #4f46e5;
+  background: rgb(118, 193, 255);
+  box-shadow: 0px 0px 40px 8px rgba(0,191,217,0.4);
   border-radius: 999px;
 }
 
@@ -47,8 +48,9 @@
   transform: translate(-50%, -50%);
   width: 19px;
   height: 19px;
-  background: #4f46e5;
+  background: rgb(101, 191, 255);
   border-radius: 999px;
+  box-shadow: 0px 0px 40px 8px rgba(0,191,217,0.75);
 }
 
 .french > div > div > .fill {
