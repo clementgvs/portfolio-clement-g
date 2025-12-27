@@ -5,10 +5,11 @@ import { Landing } from "./landing/landing";
 import { Skills } from "./skills/skills";
 import { Projects } from "./projects/projects";
 import { CareerHistory } from "./career-history/career-history";
+import { Footer } from "./footer/footer";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Contact, Landing, Skills, Projects, CareerHistory],
+  imports: [RouterOutlet, Contact, Landing, Skills, Projects, CareerHistory, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
