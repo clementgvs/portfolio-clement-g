@@ -4,10 +4,14 @@
             <h2>{{ project.title }}</h2>
             <p class="link">
                 <a [href]="project.link" target="_blank">
-                    @if(project.link != null){
-                        Voir le projet
+                    @if(project.link?.startsWith("https://github.com/")){
+                        Voir sur GitHub
                     }@else {
-                        Privé
+                        @if(project.link != null) {
+                            Site web
+                        }@else {
+                            Privé
+                        }
                     }
                 </a>
             </p>

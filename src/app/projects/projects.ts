@@ -9,34 +9,49 @@ import { Component } from '@angular/core';
 export class Projects {
   projects = [
     {
-      title: 'Portfolio Personnel',
-      link: 'https://monportfolio.com',
-      description: "Mon site portfolio, réalisé avec Angular pour présenter mes projets et compétences."
+      title: 'Alterya',
+      link: 'https://github.com/clementgvs/alterya',
+      description: "Plugin Minecraft pour serveur P.V.P Faction (1.7.10), séparé en trois modules : Core, Faction et Moderation."
     },
     {
-      title: 'Application Flutter',
+      title: 'SafeTrack',
+      link: 'https://github.com/clementgvs/safetrack',
+      description: "Extension Chrome permettant de suivre les fuites de sécurité liées à la navigation web."
+    },
+    {
+      title: 'SportStats',
+      link: 'https://github.com/clementgvs/sportstats',
+      description: "Application Android native développée en Kotlin pour suivre mes statistiques personnelles de musculation."
+    },
+    {
+      title: 'Portfolio personnel',
+      link: 'https://github.com/clementgvs/portfolio-clement-g',
+      description: "Portfolio personnel développé avec Angular pour présenter mes projets et compétences."
+    },
+    {
+      title: 'LeexEye',
+      link: 'https://github.com/clementgvs/leexeye',
+      description: "Projet visant à faciliter l’accès au numérique pour les personnes en situation de handicap moteur, réalisé avec Entreprendre Pour Apprendre et Samsung France."
+    },
+    {
+      title: 'Oned',
+      link: 'https://github.com/clementgvs/oned',
+      description: "Application Android native de rappels personnalisés développée en Kotlin."
+    },
+    {
+      title: 'Site web Festival Rock’n Solex',
+      link: 'https://rocknsolex.fr/',
+      description: "Site web officiel du Festival Rock’n Solex 2026."
+    },
+    {
+      title: 'Application Festival Rock’n Solex',
+      link: 'https://rocknsolex.fr/',
+      description: "Application mobile du Festival Rock’n Solex 2026."
+    },
+    {
+      title: 'Now Playing',
       link: null,
-      description: "Une application mobile développée en Flutter dans le cadre d'un projet étudiant."
-    },
-    {
-      title: 'Site Web d\'association',
-      link: 'https://asso-example.com',
-      description: "Site web développé pour une association locale, avec HTML, CSS et JavaScript."
-    },
-    {
-      title: 'Mini Jeu en Python',
-      link: null,
-      description: "Un petit projet ludique réalisé en Python pour apprendre la programmation orientée objet."
-    },
-    {
-      title: 'Gestion de Base de Données SQL',
-      link: null,
-      description: "Projet académique sur la création et manipulation de bases de données SQL."
-    },
-    {
-      title: 'Automatisation Bash',
-      link: null,
-      description: "Scripts Bash pour automatiser certaines tâches répétitives sur mon ordinateur."
+      description: "Plateforme académique affichant les informations d’un morceau en cours de lecture, depuis le streaming ou des supports physiques via recherche par code-barres.",
     }
   ];
 }
