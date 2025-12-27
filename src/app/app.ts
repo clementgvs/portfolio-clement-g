@@ -1,15 +1,14 @@
 import { Component, HostListener, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Academic } from "./academic/academic";
 import { Contact } from "./contact/contact";
 import { Landing } from "./landing/landing";
 import { Skills } from "./skills/skills";
 import { Projects } from "./projects/projects";
-import { Professional } from "./professional/professional";
+import { CareerHistory } from "./career-history/career-history";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Academic, Contact, Landing, Skills, Projects, Professional],
+  imports: [RouterOutlet, Contact, Landing, Skills, Projects, CareerHistory],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
