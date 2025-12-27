@@ -3,7 +3,7 @@
         <div class="lang-sliders">
             <span class="french slider">
                 <div class="range-slider">
-                    <h3 class="label">Français</h3>
+                    <h2 class="label">Français</h2>
 
                     <div class="track">
                         <div class="fill"></div>
@@ -13,7 +13,7 @@
             </span>
             <span class="english slider">
                 <div class="range-slider">
-                    <h3 class="label">Anglais</h3>
+                    <h2 class="label">Anglais</h2>
                     <div class="track">
                         <div class="fill"></div>
                         <div class="thumb"></div>
@@ -22,7 +22,7 @@
             </span>
             <span class="spanish slider">
                 <div class="range-slider">
-                    <h3 class="label">Espagnol</h3>
+                    <h2 class="label">Espagnol</h2>
                     <div class="track">
                         <div class="fill"></div>
                         <div class="thumb"></div>
@@ -31,7 +31,7 @@
             </span>
             <span class="japanese slider">
                 <div class="range-slider">
-                    <h3 class="label">Japonais</h3>
+                    <h2 class="label">Japonais</h2>
                     <div class="track">
                         <div class="fill"></div>
                         <div class="thumb"></div>
@@ -50,7 +50,7 @@
                 @for (skill of skills; track skill.name) {
                     <div class="card">
                         <img class="icon" [src]="skill.icon">
-                        <h3>{{ skill.name }}</h3>
+                        <h2>{{ skill.name }}</h2>
                         <p>{{ skill.text }}</p>
                     </div>
                 }

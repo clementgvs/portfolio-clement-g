@@ -1,0 +1,41 @@
+.content {
+    width: 100%;
+}
+
+.line {
+    height: 100%;
+    width: 5vw;
+    align-self: flex-start;
+    border-radius: 999px;
+    background-color: white;
+    justify-self: left;
+    margin-left: 6vw;
+}
+
+.items {
+    margin-right: 4vw;
+    justify-self: right;
+}
+
+.item {
+    background-color: #1e1e2f;    
+    border-radius: 2rem;
+    width: 40vw;
+    padding: 1.8rem;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date {
+    margin-right: 2rem;
+}
+
+.text,
+.head > * {
+    color: white;
+}

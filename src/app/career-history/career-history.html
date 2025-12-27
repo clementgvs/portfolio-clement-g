@@ -1,1 +1,14 @@
-<p>career-history works!</p>
+<div class="content">
+    <div class="line"></div>
+    <div class="items">
+        @for(item of items; track item){
+            <div class="item">
+                <span class="head">
+                    <h2 class="title">{{item.title}}</h2>
+                    <h4 class="date">{{item.date}}</h4>
+                </span>
+                <p class="text">{{item.text}}</p>
+            </div>
+        }
+    </div>
+</div>
