@@ -40,9 +40,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  //padding: 1rem;
   box-sizing: inherit;
   position: relative;
+  overflow-x: hidden;
 }
 
 .content-wrapper {
@@ -58,12 +58,11 @@ main {
   gap: 0.5vw;
   top: 2rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-  z-index: 1000;
+  z-index: 9999;
   height: 5vh;
   align-items: center;
   justify-content: center;
-  padding-left: 1vw;
-  padding-right: 1vw;
+  padding: 0 1vw;
 }
 
 .floating-bar > * {
@@ -103,7 +102,7 @@ main {
   cursor: pointer;
 }
 
-.go-to-top{
+.go-to-top {
   position: fixed;
   background-color: white;
   border-radius: 100%;
@@ -134,15 +133,23 @@ main {
 }
 
 footer {
-  background-color: #222;
+  background-color: #000;
   color: #fff;
   text-align: center;
   padding: 20px;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 700px) {
   .content-wrapper{
     flex-direction: column;
-    width: max-content;
+  }
+
+  .floating-bar {
+    visibility: hidden;
+  }
+
+  .go-to-top {
+    width: 15vw;
+    height: 15vw;
   }
 }

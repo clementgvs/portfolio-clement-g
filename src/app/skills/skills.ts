@@ -27,10 +27,16 @@ export class Skills {
   ];
 
   currentIndex = 0; 
-  visibleCards = 2.85;
+  
+  get visibleCards(): number {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth <= 700 ? 1 : 2.85;
+    }
+    return 2.85;
+  }
 
   next() {
-    if (this.currentIndex < this.skills.length - this.visibleCards) {
+    if (this.currentIndex < this.skills.length - Math.floor(this.visibleCards)) {
       this.currentIndex++;
     }
   }
@@ -39,6 +45,10 @@ export class Skills {
     if (this.currentIndex > 0) {
       this.currentIndex--;
     }
+  }
+
+  get canGoNext(): boolean {
+      return this.currentIndex < this.skills.length - Math.floor(this.visibleCards);
   }
 
   trackByName = (_: number, skill: any) => skill.name;

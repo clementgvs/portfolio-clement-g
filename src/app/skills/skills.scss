@@ -3,7 +3,7 @@
     gap: 5vw;
     width: 100%;
     justify-content: center;
-    align-items: center;
+    place-items: center;
 }
 
 .languages{
@@ -137,7 +137,27 @@
 }
 
 @media screen and (max-width: 700px) {
+
+    .lang-sliders {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0rem;
+        margin: 1vh auto;
+    }
+
+    .range-slider {
+        margin: 2vh auto;
+    }
+
     .card {
         min-width: 100%;
+        margin: 0; 
+        border: 5px solid transparent; 
+        background-clip: padding-box;
+    }
+    
+    .carousel-container {
+        padding-left: 2vw;
+        padding-right: 2vw;
     }
 }

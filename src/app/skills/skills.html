@@ -45,18 +45,20 @@
             <button class="nav-btn" (click)="prev()" [style.visibility]="currentIndex > 0 ? 'visible' : 'hidden'">
                 ‹
             </button>
+            
             <div class="carousel">
                 <div class="carousel-track" [style.transform]="'translateX(-' + currentIndex * (100 / visibleCards) + '%)'">
-                @for (skill of skills; track skill.name) {
-                    <div class="card">
-                        <img class="icon" [src]="skill.icon">
-                        <h2>{{ skill.name }}</h2>
-                        <p>{{ skill.text }}</p>
-                    </div>
-                }
+                    @for (skill of skills; track skill.name) {
+                        <div class="card">
+                            <img class="icon" [src]="skill.icon">
+                            <h2>{{ skill.name }}</h2>
+                            <p>{{ skill.text }}</p>
+                        </div>
+                    }
                 </div>
             </div>
-            <button class="nav-btn" (click)="next()" [style.visibility]="currentIndex >= 5 ? 'hidden' : 'visible'">
+
+            <button class="nav-btn" (click)="next()" [style.visibility]="canGoNext ? 'visible' : 'hidden'">
                 ›
             </button>
         </div>

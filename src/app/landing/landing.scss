@@ -15,7 +15,7 @@
     margin-top: 55vh;
     margin-left: 1rem;
     margin-bottom: 3rem;
-    font-size: 10vw;  
+    font-size: 10.25vw;  
     font-weight: 700;
     color: rgba(0, 150, 255, 0.25);
 }
@@ -56,4 +56,14 @@
     font-weight: 500;
     color: white;
     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width: 700px) {
+    .title {
+        font-size: 17vw;
+    }
+
+    .visitBottomArrow {
+        width: 15vw;
+    }
 }

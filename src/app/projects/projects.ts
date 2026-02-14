@@ -26,7 +26,7 @@ export class Projects {
     {
       title: 'Portfolio personnel',
       link: 'https://github.com/clementgvs/portfolio-clement-g',
-      description: "Portfolio personnel développé avec Angular pour présenter mes projets et compétences."
+      description: "Portfolio personnel réalisé avec Angular pour présenter mes projets et compétences informatiques."
     },
     {
       title: 'LeexEye',
@@ -34,17 +34,17 @@ export class Projects {
       description: "Projet visant à faciliter l’accès au numérique pour les personnes en situation de handicap moteur, réalisé avec Entreprendre Pour Apprendre et Samsung France."
     },
     {
-      title: 'Oned',
-      link: 'https://github.com/clementgvs/oned',
-      description: "Application Android native de rappels personnalisés développée en Kotlin."
+      title: 'Momentime',
+      link: 'https://github.com/clementgvs/Momentime',
+      description: "Application de fusion de calendriers avec ses proches dans le but d'organiser des rencontres et évènements."
     },
     {
-      title: 'Site web Festival Rock’n Solex',
+      title: 'Site web du festival Rock’n Solex',
       link: 'https://rocknsolex.fr/',
       description: "Site web officiel du Festival Rock’n Solex 2026."
     },
     {
-      title: 'Application Festival Rock’n Solex',
+      title: 'Application du festival Rock’n Solex',
       link: 'https://rocknsolex.fr/',
       description: "Application mobile du Festival Rock’n Solex 2026."
     },

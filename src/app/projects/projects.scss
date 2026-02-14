@@ -64,13 +64,16 @@
 }
 
 @media screen and (max-width: 980px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur tablettes */
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%; 
   }
 }
 
 @media screen and (max-width: 680px) {
-  .grid-container {
-    grid-template-columns: 1fr; /* 1 colonne sur mobile */
+  .content {
+    grid-template-columns: 1fr;
+    width: 95%;
+    gap: 2rem; 
   }
 }
