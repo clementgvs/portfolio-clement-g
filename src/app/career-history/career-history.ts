@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { tick } from '@angular/core/testing';
-import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-career-history',
@@ -10,11 +8,13 @@ import { Title } from '@angular/platform-browser';
 })
 export class CareerHistory {
   items = [
-    {title: "Rock’n Solex Festival", date: "nov. 2025 - aujourd’hui", text: "Web & Mobile App Manager / Developer (bénévole). Développement et gestion d’applications web et mobiles utilisées par les bénévoles et le public."},
-    {title: "McDonald’s Vichy", date: "juil. - août 2023, 2024 et 2025", text: "Crew Member. Accueil et service client, préparation des commandes dans le respect des normes d’hygiène et travail en équipe."},
-    {title: "Vichy Communauté", date: "juil. - août 2024", text: "Stagiaire – service informatique. Étude et déploiement de matériel informatique pour l’organisation d’événements sportifs (Jeux Olympiques)."},
-    {title: "INSA Rennes", date: "2023 - aujourd’hui", text: "Études d’ingénieur en informatique et génie logiciel, option Cybersécurité."},
-    {title: "Lycée Albert Londres – Vichy", date: "2020 - 2023", text: "Baccalauréat général – Mention Très Bien, spécialité Mathématiques et NSI, option Mathématiques expertes."},
-    {title: "Samsung Solve for Tomorrow", date: "avr. 2022", text: "3e place au concours Samsung Solve for Tomorrow."},
+    { title: "Cours Ado Rennes", date: "sept. 2026 - aujourd’hui", text: "Professeur particulier de mathématiques. Soutien scolaire : aide aux devoirs et préparation aux contrôles." },
+    { title: "École des Transmissions, du Numérique et du Cyber", date: "juin - juil. 2026", text: "Stagiaire ingénieur logiciel au Centre de Simulation Opérationnelle. Conception et développement en JavaFX d’un logiciel pédagogique servant de support d’exercice, et de modules de simulation et scénarios d’opérations sous Virtual Battlespace (VBS)." },
+    { title: "Rock’n Solex Festival", date: "nov. 2025 - nov. 2026", text: "Responsable Web & Mobile (bénévole). Conception, développement et gestion de l’application mobile, du site web et du serveur dédié OVH du festival." },
+    { title: "Vichy Communauté", date: "juil. - août 2024", text: "Stagiaire à la Direction des Systèmes d’Information. Maintenance réseau (brassage, configuration de switchs, déploiement de bornes) et mise en place d’infrastructures temporaires pour les services et événements publics." },
+    { title: "McDonald’s Vichy", date: "étés 2023, 2024 et 2025", text: "Équipier polyvalent saisonnier. Accueil et service client, préparation des commandes et travail d’équipe pour maintenir un service de qualité." },
+    { title: "INSA Rennes", date: "2023 - aujourd’hui", text: "Diplôme d’ingénieur en informatique, option Sécurité. Semestre Erasmus+ à l’Universitatea Politehnica din București (mars - juin 2027)." },
+    { title: "Samsung Solve for Tomorrow", date: "mai 2022", text: "3e place nationale avec le projet LeexEye : prototype de contrôle sans contact (eye-tracking et reconnaissance vocale) pour les handicaps moteurs lourds." },
+    { title: "Lycée Albert Londres – Vichy", date: "2020 - 2023", text: "Baccalauréat général, mention Très Bien. Spécialités Mathématiques et NSI, option Mathématiques expertes." },
   ];
 }

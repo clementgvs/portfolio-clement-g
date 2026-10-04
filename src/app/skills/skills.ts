@@ -8,26 +8,26 @@ import { Component } from '@angular/core';
 })
 export class Skills {
   skills = [
-    { name: 'Java', icon: 'java.png', 
-      text: "Il s'agit du langage avec lequel j'ai commencé la programmation. J'ai eu l'occasion de participer à un gros projet avec celui-ci. Par la suite, j'ai maintenu mes connaissances dessus durant ma formation à l'INSA Rennes." },
-    { name: 'C', icon: 'c.png', 
-      text: "Après avoir appris le C durant ma formation, et ce avec de bons résultats, j'ai pris goût à l'utiliser." },
-    { name: 'Python', icon: 'python.png', 
-      text: "À l'occasion d'un concours organisé par Samsung France entre plusieurs lycée de France, j'ai utilisé Python pour la démonstration de ce projet au jury." },
-    { name: 'Flutter', icon: 'flutter.png', 
-      text: "Flutter est un langage que j'ai utilisé dans de nombreux projets et que j'ai appris à utiliser à travers mon expérience des applications native mais aussi de divers projets durant ma formation et en dehors." },
-    { name: 'Web and Angular', icon: 'angular.png', 
-      text: "Je me suis intéressé au développement web et à Angular il y a déjà quelque temps, sans réellement les pratiquer au départ. C’est à l’occasion d’un projet réalisé durant ma formation que j’ai commencé à les utiliser concrètement, puis à les approfondir pour la réalisation de ce portfolio."},
-    { name: 'Git', icon: 'git.png', 
-      text: "Git est un indispensable que j'ai commencé à maitriser il y a longtemps pour tout mes précédents projets et que j'ai maitrisé complètement au cours de ma formation à l'INSA Rennes" },
-    { name: 'SQL', icon: 'sql.png', 
-      text: "J’ai d’abord utilisé SQL par curiosité et pour effectuer quelques tests il y a plusieurs années. C’est au début de ma formation que j’ai ensuite eu l’occasion de le pratiquer de manière plus approfondie, ce qui m’a permis d’en comprendre les bases solides et les usages courants."},
-    { name: 'Bash', icon: 'bash.png', 
-      text: "J'ai eu l'occasion d'utiliser Bash à de nombreuses reprises lors de différents projets il y a longtemps sans le comprendre. C'est durant ma formation que j'ai eu l'occasion de le comprendre plus." }
+    { name: 'Java', icon: 'java.png',
+      text: "Mon premier langage de programmation. Je l'ai pratiqué sur des projets personnels, approfondi à l'INSA Rennes, puis utilisé en stage pour développer un logiciel pédagogique en JavaFX. J'y associe Spring (API REST, JPA), Maven, JUnit et Mockito." },
+    { name: 'C', icon: 'c.png',
+      text: "Appris durant ma formation à l'INSA Rennes avec de bons résultats, j'ai pris goût à ce langage et à la rigueur qu'il demande." },
+    { name: 'Python', icon: 'python.png',
+      text: "Je l'ai utilisé pour la démonstration de mon projet LeexEye devant le jury du concours Samsung Solve for Tomorrow, organisé entre plusieurs lycées de France." },
+    { name: 'Flutter / Dart', icon: 'flutter.png',
+      text: "Flutter est le framework (basé sur Dart) que j'utilise dans mes projets mobiles, académiques comme associatifs. J'ai découvert le mobile avec des applications natives (Android/Kotlin) avant de passer au multiplateforme." },
+    { name: 'Web & Angular', icon: 'angular.png',
+      text: "Je m'intéressais au développement web depuis un moment sans vraiment le pratiquer. C'est un projet de ma formation qui m'a fait utiliser Angular et TypeScript concrètement, puis je les ai approfondis pour le site du festival Rock’n Solex et pour ce portfolio." },
+    { name: 'Git', icon: 'git.png',
+      text: "Un outil indispensable que j'utilise depuis longtemps sur tous mes projets, et que je maîtrise pleinement depuis ma formation à l'INSA Rennes, y compris en équipe avec GitLab CI." },
+    { name: 'SQL', icon: 'sql.png',
+      text: "Utilisé d'abord par curiosité, puis de façon approfondie au début de ma formation. J'ai travaillé avec PostgreSQL et MySQL, et abordé MongoDB côté NoSQL." },
+    { name: 'Linux & Bash', icon: 'bash.png',
+      text: "Je l'ai souvent utilisé sur mes projets sans bien le comprendre ; c'est durant ma formation que j'ai vraiment compris son fonctionnement. Je m'en sers aujourd'hui pour administrer mon serveur dédié OVH, avec Docker." }
   ];
 
-  currentIndex = 0; 
-  
+  currentIndex = 0;
+
   get visibleCards(): number {
     if (typeof window !== 'undefined') {
       return window.innerWidth <= 700 ? 1 : 2.85;
@@ -36,7 +36,7 @@ export class Skills {
   }
 
   next() {
-    if (this.currentIndex < this.skills.length - Math.floor(this.visibleCards)) {
+    if (this.canGoNext) {
       this.currentIndex++;
     }
   }
@@ -48,8 +48,6 @@ export class Skills {
   }
 
   get canGoNext(): boolean {
-      return this.currentIndex < this.skills.length - Math.floor(this.visibleCards);
+    return this.currentIndex < this.skills.length - Math.floor(this.visibleCards);
   }
-
-  trackByName = (_: number, skill: any) => skill.name;
 }
